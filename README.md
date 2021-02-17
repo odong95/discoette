@@ -1,2 +1,2 @@
 # discoette
-Discoette is an app that tracks and notifies users on their favorite artists' releases.
+discoette is an open source application that tracks and notifies users of new music releases.

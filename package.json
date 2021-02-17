@@ -1,0 +1,31 @@
+{
+  "name": "discoette",
+  "version": "1.0.0",
+  "description": "discoette is an open source application that tracks and notifies users of new music releases.",
+  "author": "Brian Odong",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.3.3",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@prisma/client": "^2.17.0",
+    "cors": "^2.8.5",
+    "emotion-theming": "^11.0.0",
+    "framer-motion": "^3.3.0",
+    "next": "9.5.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/next-auth": "3.1.14",
+    "@types/node": "14.14.6",
+    "@types/react": "16.9.56",
+    "prisma": "^2.17.0",
+    "typescript": "4.0.5"
+  }
+}
