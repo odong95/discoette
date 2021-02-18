@@ -1,9 +1,17 @@
-import { Box } from "@chakra-ui/react";
+import { Flex } from '@chakra-ui/react';
 
-export const Footer = () => {
+export const Footer = ({ bgColor }) => {
   return (
-    <Box>
-      footer goes here
-    </Box>
-  )
+    <Flex
+      as="footer"
+      align="center"
+      justify="space-between"
+      wrap="wrap"
+      w="100%"
+      bg={bgColor}
+      p={8}
+    >
+      footer here
+    </Flex>
+  );
 }

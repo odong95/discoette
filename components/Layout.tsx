@@ -1,16 +1,16 @@
-import { Box, Container } from "@chakra-ui/react";
-import { NavBar } from 'components/NavBar';
+import { Box, Container, useColorModeValue } from '@chakra-ui/react';
+import { Header } from 'components/navigation/Header';
 import { Footer } from 'components/Footer';
 
-export const Layout = (props: any) => {
-  const { children } = props;
+export const Layout = ({ children }) => {
+  const bgColor = useColorModeValue('gray.200', 'gray.900');
   return (
-    <Box>
-      <NavBar />
-      <Container h="100vh" m="10px">
+    <Box minHeight="100vh" display="flex" flexDir="column">
+      <Header bgColor={bgColor} />
+      <Container maxW="97vw" flex={1}>
         {children}
       </Container>
-      <Footer />
+      <Footer bgColor={bgColor} />
     </Box>
   )
 }
